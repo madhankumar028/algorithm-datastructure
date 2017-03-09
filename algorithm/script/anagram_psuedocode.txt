@@ -1,0 +1,4 @@
+check for both the string lenghts to be equal, if so proceed or break the execution.
+check for both the words has same characters present in it,
+    (still not confirmed and chances are high to be anagrams).
+
