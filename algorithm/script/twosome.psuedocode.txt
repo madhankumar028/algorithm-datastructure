@@ -1,0 +1,1 @@
+function gets the parameter as target and array.
