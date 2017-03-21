@@ -7,8 +7,8 @@ describe('Anagram test', function() {
 
     it('test for anagram function', function() {
 
-        var wordA = 'listen';
-        var wordB = 'silent';
+        let wordA = 'listen',
+            wordB = 'silent';
 
         assert.deepEqual(anagram.checkForAnagram(wordA, wordB), null);
         // anagram.checkForAnagram(wordA, wordB);

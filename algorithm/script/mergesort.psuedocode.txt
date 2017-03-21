@@ -1,0 +1,5 @@
+Sort the porblem into subproblems (nodes).
+Break the problem into subproblem untill we can make it further. If not stop dividing the problem.
+Take a subproblem and compare the elements in it, sort the elements.
+Repeat step 3 untill solving the subproblem.
+Merge the subproblem to finish the problem.

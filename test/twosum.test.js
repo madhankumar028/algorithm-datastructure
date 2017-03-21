@@ -5,7 +5,7 @@ describe('TwoSum test suite', function() {
 
     it('test for twosum function', function() {
         
-        var numbers = [5, 2, 7 ,10, 4],
+        let numbers = [5, 2, 7 ,10, 4],
             target = 6,
             result;
 
