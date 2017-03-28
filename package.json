@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register"
+    "test": "mocha --compilers js:babel-core/register",
+    "debug": "node --debug=5858 test/**.test.js"
   },
   "repository": {
     "type": "git",
