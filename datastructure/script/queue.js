@@ -1,3 +1,12 @@
+/**
+ * Author Madhankumar<madhankumar028@gmail.com>
+ */
+
+/**
+ * 
+ * @param {Array}  queue 
+ * @param {Number} newElement 
+ */
 export function enqueue(queue, newElement) {
     var rear = queue.length;
     queue[rear] = newElement;
@@ -5,6 +14,14 @@ export function enqueue(queue, newElement) {
     return queue;
 }
 
-export function dequeue(queue, popElement) {
+/**
+ * 
+ * @param {Array}  queue 
+ * @param {Number} popElement 
+ */
+export function dequeue(queue, popElement) {    
+    var rear = queue.length;
+    queue.splice(rear - rear, 1);
     
+    return queue;
 }
