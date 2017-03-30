@@ -40,9 +40,9 @@ export function pop(stack, element) {
 }
 
 function checkForOverflow(stack) {
-    return stack.length > maxSize ? false : true;
+    return stack.length >= maxSize ? false : true;
 }
 
 function checkForUnderflow(stack) {    
-    return stack.length === minSize ? false : true;
+    return !stack.length ? false : true;
 }
