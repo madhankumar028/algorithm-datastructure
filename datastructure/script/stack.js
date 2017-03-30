@@ -14,10 +14,10 @@ var maxSize = 10,
     minSize = 0;
 
 export function push(stack, element) {   
-    var isStackFull = checkForOverflow(stack),
-        top = stack.length;
+    let isStackFull = checkForOverflow(stack);
 
     if (isStackFull) {
+        let top = stack.length;
         stack[top] = element;        
     } else {
         return 'The stack is overflow';
@@ -27,10 +27,10 @@ export function push(stack, element) {
 }
 
 export function pop(stack, element) {
-    var isStackEmpty = checkForUnderflow(stack),
-        top = stack.length;    
+    let isStackEmpty = checkForUnderflow(stack);    
 
     if (isStackEmpty) {
+        let top = stack.length;
         stack.splice(top - 1, 1);        
     } else {
         return 'the stack is empty';

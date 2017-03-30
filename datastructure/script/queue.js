@@ -8,7 +8,7 @@
  * @param {Number} newElement 
  */
 export function enqueue(queue, newElement) {
-    var rear = queue.length;
+    let rear = queue.length;
     queue[rear] = newElement;
 
     return queue;
@@ -20,7 +20,7 @@ export function enqueue(queue, newElement) {
  * @param {Number} popElement 
  */
 export function dequeue(queue, popElement) {    
-    var rear = queue.length;
+    let rear = queue.length;
     queue.splice(rear - rear, 1);
     
     return queue;

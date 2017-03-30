@@ -6,13 +6,13 @@ describe('Stack test suite', function() {
     var stackArray = [1, 4, 5, 7];
 
     it('Pusing into stack', function() {
-        var newArray = stack.push(stackArray, 10);
+        let newArray = stack.push(stackArray, 10);
         chai.assert.sameMembers(stackArray, newArray,
                     `new element isn't inserted into the stack`);        
     });
 
     it('Pushing into overflowed stack', function() {        
-        var overflowArray = [1, 2, 3, 4, 5, 6 ,7, 8, 9, 0],
+        let overflowArray = [1, 2, 3, 4, 5, 6 ,7, 8, 9, 0],
             newArray;
 
         newArray = stack.push(overflowArray, 12);
@@ -21,12 +21,12 @@ describe('Stack test suite', function() {
     });
 
     it('Popping out from stack', function() {
-        var newArray = stack.pop(stackArray, 10);
+        let newArray = stack.pop(stackArray, 10);
         chai.assert([1, 4, 5, 7], newArray, 'the target is not removed from the stack');
     });
 
     it('Popping out from empty stack', function() {
-        var underflowArray = [],
+        let underflowArray = [],
             newArray;
 
         newArray = stack.pop(underflowArray, 2);
