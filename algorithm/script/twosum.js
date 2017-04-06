@@ -13,12 +13,11 @@ You may assume that each input would have exactly one solution, and you may not 
  */
 export function checkForTwoSum(nums, target) {
     
-    var isTwoSum;
+    let isTwoSum;
     nums.some(function(num) {
         isTwoSum = compare(num, nums, target);
-        if (isTwoSum) {
-            return isTwoSum;
-        }
+        if (isTwoSum)
+            return isTwoSum;        
     });
     
     return isTwoSum;
@@ -32,10 +31,10 @@ export function checkForTwoSum(nums, target) {
  */
 function compare(number, arr, target) {
     
-    var array = [],
-        sum;
+    let array = [],
+        i = 1, sum;
     
-    for (var i = 1; i < arr.length; i++) {        
+    for ( ; i < arr.length; i++) {        
         sum = arr[i] + number;        
         if (sum == target) {
             array.push(number);

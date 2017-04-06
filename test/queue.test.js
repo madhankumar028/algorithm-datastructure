@@ -1,3 +1,7 @@
+/**
+ * Author Madhankumar<madhankumar028@gmail.com>
+ */
+
 import * as chai from 'chai';
 import * as queue from '../datastructure/script/queue';
 
@@ -11,8 +15,9 @@ describe('Queue test suite', function() {
     });
 
     it('Dequeue test', function() {
-        var newQueue = queue.dequeue(queueArray, 10);
-        chai.assert([1, 2, 4, 5], newQueue,
-                    'Removed element is removed from the queue');
+        var newQueue = queue.dequeue(queueArray, 1);
+        console.log(newQueue);
+        chai.assert([2, 4, 5, 10], newQueue,
+                    'Target element is removed from the queue');
     });
 });
