@@ -1,3 +1,7 @@
+/**
+* Author MadhankumarJ<madhankumar028@gmail.com>
+*
+*/
 export function flattenArray(arr) {
 	
 	var flattenedArray = [];

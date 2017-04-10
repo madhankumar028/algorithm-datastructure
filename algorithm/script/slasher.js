@@ -1,4 +1,9 @@
-function slasher(arr, howMany) {  
+/**
+* Author MadhankumarJ<madhankumar028@gmail.com>
+*
+*/
+
+export function slasher(arr, howMany) {  
   return howMany === 0 ? arr : chopper(arr, howMany);
 }
 

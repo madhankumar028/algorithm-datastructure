@@ -1,5 +1,5 @@
 import * as chai from 'chai';
-import * as waterTower from '../toyproblem/waterTower';
+import * as waterTower from '../toyproblem/script/waterTower';
 
 describe('Water Tower suite', function() {
 
