@@ -1,3 +1,8 @@
+/**
+* Author MadhankumarJ<madhankumar028@gmail.com>
+*
+*/
+
 import * as chai from 'chai';
 import * as flatten from '../algorithm/script/flatten_array.js';
 

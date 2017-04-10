@@ -31,7 +31,7 @@ export function pop(stack, element) {
 
     if (isStackEmpty) {
         let top = stack.length;
-        stack.splice(top - 1, 1);        
+        stack.splice(top - 1, 1);
     } else {
         return 'the stack is empty';
     }

@@ -1,0 +1,31 @@
+   *
+   *
+ *w*
+ *w*
+ ***
+ ****
+*****
+
+If all the elements in the array are sorted in ascending order, we cannot calculate the water.
+
+
+This problem is a very good example of stack application.
+Here, we'll keep on pushing heights (array indices) on the stack.
+
+For every height to be pushed:
+
+If it is lesser than stack top, push it.
+
+Else, pop a height from stack,
+
+If stack becomes empty, push current height 
+        (it would mean that all tower before this are of height lesser than this,
+        hence no water will be collected).
+
+Else, add the water collected between current tower and stack top tower.
+
+Keep on popping until either stack become empty or stack top becomes greater than current height.
+
+(If stack didn't become empty, we might have added extra water between stack top
+and current tower of the amount equal to multiplication of difference in heights of these two
+and their horizontal separation. So, we'll have to subtract it.)

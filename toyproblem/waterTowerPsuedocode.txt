@@ -1,9 +1,0 @@
-   *
-   *
- *w*
- *w*
- ***
- ****
-*****
-
-If all the elements in the array are sorted in ascending order, we cannot calculate the water.
