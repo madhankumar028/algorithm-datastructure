@@ -4,7 +4,11 @@ import * as waterTower from '../toyproblem/script/waterTower';
 describe('Water Tower suite', function() {
 
     it('waterTower', function() {
-        let heigths = [1, 0, 3, 2];
-        waterTower.calculateWaterUnits(heights);
+        let heights = [1, 0, 3, 2],
+            waterCollected;
+        
+        waterCollected = waterTower.calculateWaterUnits(heights);
+
+        console.log(waterCollected);
     });
 });

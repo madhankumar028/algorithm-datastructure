@@ -1,27 +1,28 @@
 /**
+ * Author MadhankumarJ<madhankumar028@gmail.com>
+ * 
  * WaterTower Problem
- *
- * Author Madhankumar<madhankumar028@gmail.com>
  * 
  * Input: [1,0,3,2] (width of each tower is 1 unit), Output: 1 units
  * 
  */
-export function calculateWaterUnits(heights) {
+// @flow
+export function calculateWaterUnits(heights: Array<Number>) {
     
-    var isTowerSorted;
+    var isTowerSorted = isSorted(heights);
     
-    heights.forEach(function(tower) {
-        isTowerSorted = isSorted(tower, heights);
-    });
-
-    if (isTowerSorted)
-        return 'water is not collected';
+    if (!isTowerSorted)
+        return 'No units of water has been collected between these towers';
     
     calculateTowersDifference(heights);
 }
 
-function isSorted(element, heights) {    
-
+function isSorted(heights) {    
+    var sortedHeights = heights.sort();
+        
+    heights.every(function(heigth, index) {
+        return heigth === sortedHeights[index];
+    });
 }
 
 function calculateTowersDifference(heights) {
