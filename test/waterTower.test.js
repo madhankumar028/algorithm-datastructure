@@ -8,7 +8,5 @@ describe('Water Tower suite', function() {
             waterCollected;
         
         waterCollected = waterTower.calculateWaterUnits(heights);
-
-        console.log(waterCollected);
     });
 });
